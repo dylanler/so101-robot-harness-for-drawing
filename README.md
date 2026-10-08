@@ -1,12 +1,23 @@
-# SO-101 pen plotter: landmark sketches drawn by a robot arm
+# SO-101 robot harness for drawing
 
-An SO-101 arm (LeRobot, Feetech STS3215 servos) holding a pen, three cameras watching it, and an
-AI coding agent writing the control code from scratch and closing the loop by looking at the
-camera images. Two landmarks were attempted:
+A harness that turns an SO-101 arm (LeRobot, Feetech STS3215 servos) into a pen plotter: kinematics,
+paper calibration, stroke designs, a three-camera live viewer, and agent skills. An AI coding agent
+wrote the control code from scratch and closed the loop by looking at the camera images.
+Two landmark drawings were made, each on its own sheet:
 
-* **Petronas Twin Towers, Kuala Lumpur**: success. 88 strokes, 130 × 170 mm on US-letter paper, about 6.5 minutes.
-* **ArtScience Museum, Singapore**: first attempt, rough and only partly legible. Almost
-  everything in [docs/LESSONS_LEARNED.md](docs/LESSONS_LEARNED.md) was learned here.
+### 1. ArtScience Museum, Singapore (first drawing, taped Sharpie)
+
+Rough and only partly legible: the water lines, platform and petal fan came out, but the petals are
+faint and the sheet already had marks from an earlier failed attempt. Almost everything in
+[docs/LESSONS_LEARNED.md](docs/LESSONS_LEARNED.md) was learned on this one.
+
+| Reference | Plan (hand-authored strokes) | Drawn by the robot |
+| --- | --- | --- |
+| ![reference](references/artscience-museum.jpeg) | ![plan](docs/images/plan-artscience.png) | ![result](docs/images/artscience-04-final-closeup.jpg) |
+
+### 2. Petronas Twin Towers, Kuala Lumpur (second drawing, bare refill at 90°)
+
+The successful one: 88 strokes, 130 × 170 mm on US-letter paper, about 6.5 minutes.
 
 | Reference | Plan (hand-authored strokes) | Drawn by the robot |
 | --- | --- | --- |
