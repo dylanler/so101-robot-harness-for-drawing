@@ -1,0 +1,4 @@
+# so101_sketch (robot side). The camera dashboard has its own camera_dashboard/requirements.txt.
+lerobot[feetech]>=0.4    # SO101Follower + Feetech STS3215 bus (tested with lerobot 0.6.1)
+numpy>=2.0
+opencv-python>=4.10      # previews, image tracing, direct camera fallback

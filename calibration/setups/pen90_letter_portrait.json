@@ -1,0 +1,55 @@
+{
+  "name": "pen90_letter_portrait",
+  "description": "Bare ballpoint refill clamped at 90 deg to the gripper jaws (pointing down, gripper horizontal); US-letter sheet in portrait, its centre ~340 mm in front of the base. Used for the final Petronas Twin Towers drawing (2026-09-16).",
+  "pen_reference_q": {
+    "shoulder_pan": 0.18,
+    "shoulder_lift": 36.22,
+    "elbow_flex": 42.77,
+    "wrist_flex": -68.22,
+    "wrist_roll": 0.57,
+    "gripper": 0.0
+  },
+  "pen_length_mm": 22.3,
+  "pen_pitch_deg": -10.8,
+  "home_seed": {
+    "shoulder_pan": 0.2,
+    "shoulder_lift": 11.0,
+    "elbow_flex": 56.5,
+    "wrist_flex": -56.4
+  },
+  "centre_xy_m": [
+    0.325,
+    0.0
+  ],
+  "area_mm": [
+    130.0,
+    170.0
+  ],
+  "press_mm": 3.5,
+  "hover_mm": 8.0,
+  "speed_mm_s": 25.0,
+  "step_mm": 1.0,
+  "surface": {
+    "x0": 0.325,
+    "y0": 0.0,
+    "coef": [
+      0.0085,
+      0.015,
+      0.0
+    ],
+    "source": "ink ladders 2026-09-16: lowest inking level ~8 mm at x=270 mm, ~8.5 mm at 325 mm, ~9.5 mm at 370 mm",
+    "points": [
+      [0.27, 0.07, 0.008],
+      [0.32, 0.07, 0.0085],
+      [0.37, 0.07, 0.0095]
+    ]
+  },
+  "surface_method": "ink_ladder",
+  "notes": [
+    "pen_reference_q is the pose the user left the arm in with the refill tip touching the sheet centre; pen length was auto-estimated from it (tip on z=0).",
+    "Commanded paper height is +8.5 mm, not 0: the stretched arm sags ~8-9 mm under gravity at this reach.",
+    "Servo-lag probing does not work with the flexible refill (it bends ~9 mm before the servos notice) - use ink ladders.",
+    "press 3.0 mm drew light grey lines; 3.5 mm plus a reversed second pass on outlines gave the final line weight."
+  ],
+  "updated": 1789550143.99
+}

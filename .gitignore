@@ -1,0 +1,12 @@
+# runtime output: snapshots, previews, ladder logs
+work/
+
+# python
+.venv/
+__pycache__/
+*.pyc
+
+# logs (librealsense debug dumps, dashboard server logs)
+*.log
+
+.DS_Store

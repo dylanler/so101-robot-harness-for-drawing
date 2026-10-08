@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Camera Ops · Local Dashboard</title>
+  <meta http-equiv="Cache-Control" content="no-store" />
+  <link rel="stylesheet" href="/static/styles.css?v=2" />
+</head>
+<body>
+  <div class="crt"></div>
+  <header class="topbar">
+    <div class="brand">
+      <div class="mark"></div>
+      <div>
+        <p class="kicker">Local robotics viewer</p>
+        <h1>CAMERA OPS</h1>
+      </div>
+    </div>
+    <div class="status-rail" id="status-rail">
+      <div class="chip"><span class="dot idle"></span><label>Link</label><b id="url">…</b></div>
+      <div class="chip"><span class="dot idle" id="live-dot"></span><label>Live</label><b id="live-count">—</b></div>
+      <div class="chip"><span class="dot idle" id="depth-dot"></span><label>Depth</label><b id="depth-state">—</b></div>
+      <div class="chip"><span class="dot idle" id="arm-dot"></span><label>SO-101</label><b id="arm-state">—</b></div>
+      <div class="chip clock"><label>Local</label><b id="clock">--:--:--</b></div>
+    </div>
+  </header>
+
+  <section class="meta-strip" id="meta-strip"></section>
+
+  <main id="grid" class="grid"></main>
+
+  <footer>
+    <span>Streams are live MJPEG from the local Python backend. Empty tiles are hardware/errors, not mock data.</span>
+    <span id="api-hint">/api/streams · /api/system</span>
+  </footer>
+
+  <script src="/static/app.js?v=2"></script>
+</body>
+</html>
